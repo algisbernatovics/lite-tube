@@ -14,8 +14,8 @@ use App\Http\Controllers\Home;
 |
 */
 
-
 Route::get('/', [Home::class, 'index']);
+Route::get('/search', [Home::class, 'search']);
 
 
 
