@@ -8,13 +8,12 @@
     <!-- Include CSS and JS files using Vite -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
-<body class="bg-gray-100 font-sans">
+<body class="bg-black font-sans"> <!-- Changed 'bg-gray-100' to 'bg-black' -->
 
-<div class="container mx-auto p-8 bg-black">
-    <h1 class="text-3xl font-bold mb-6">Trending Videos</h1>
+<div class="container mx-auto p-8">
 
-    <form class="max-w-md mx-auto mb-8"> <!-- Added 'mb-8' class for bottom margin -->
-        <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
+    <form class="max-w-md mx-auto mb-8">
+        <label for="default-search" class="mb-2 text-sm font-medium text-white sr-only">Search</label>
         <div class="relative">
             <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
                 <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
