@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\YouTubeController;
+use App\Http\Controllers\Home;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,7 +15,7 @@ use App\Http\Controllers\YouTubeController;
 */
 
 
-Route::get('/', [YouTubeController::class, 'getYouTubeVideos']);
+Route::get('/', [Home::class, 'index']);
 
 
 
