@@ -20,7 +20,9 @@ class Home extends Controller
 
     public function index()
     {
+
         $videos = $this->service->videos->listVideos('snippet', ['chart' => 'mostPopular', 'maxResults' => 50]);
+
         return view('home.index', compact('videos'));
     }
 
@@ -28,15 +30,15 @@ class Home extends Controller
     {
         $search = $request->search;
 
-        $params = array(
+        $params = [
             'part' => 'snippet',
             'q' => $search,
-            'maxResults' => 10
-        );
+            'maxResults' => 50
+        ];
 
         $videos = $this->service->search->listSearch('snippet', $params);
 
-        return view('home.index', compact('videos'));
+        return view('home.results', compact('videos'));
     }
 
 
